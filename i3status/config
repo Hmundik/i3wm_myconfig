@@ -1,0 +1,18 @@
+general {
+        colors = true
+        interval = 1
+        output_format = i3bar
+}
+
+order += "memory"
+order += "tztime local"
+
+memory {
+        format = "%used / %available"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S|"
+}
